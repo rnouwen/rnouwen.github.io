@@ -5,7 +5,4 @@ logo: me23rounded.png # Use a relative path to logo image
 
 remote_theme: jekyll-theme-minimal
 
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
 email: r.w.f.nouwen@uu.nl # Allow visitors to contact you
