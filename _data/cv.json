@@ -1,32 +1,33 @@
 {
   "basics": {
     "name": "Rick Nouwen",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "email": "r.w.f.nouwen@uu.nl",
+    "phone": "+31614747322",
+    "website": "https://ricknouwen.org",
+      "summary": "Currently employed at Utrecht University, I am a language scientist.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "address": "Trans 10",
+      "postalCode": "3512JK",
+      "city": "Utrecht",
+      "countryCode": "the Netherlands",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=46CYgFYAAAAJ&hl=en&oi=ao"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0001-9571-4644"
+
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "rnouwen",
+        "url": "https://github.com/rnouwen"
       }
     ]
   },
