@@ -52,7 +52,7 @@ preview = {https://ricknouwen.org/d/soup_post2.png}
   year      = {2025},
   eprint    = {2510.04581},
   archivePrefix = {arXiv},
-  arxiv       = {2510.04581}
+  arxiv     1  = {2510.04581}
 }
 
 @inproceedings{wong2025vaquum,

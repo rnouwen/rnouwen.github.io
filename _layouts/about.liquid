@@ -19,11 +19,15 @@ layout: default
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% if page.profile.image_shadow == false %}
+            {% assign profile_image_depth = '' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_depth = ' z-depth-1' %}
+          {% endif %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid rounded-circle' | append: profile_image_depth %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid rounded' | append: profile_image_depth %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}

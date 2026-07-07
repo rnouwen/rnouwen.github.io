@@ -47,13 +47,13 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false ### adds search in menu
 socials_in_search: true
 posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 730px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -139,7 +139,8 @@ collections:
       layout: post
     output: false
   projects:
-    output: false
+    output: true
+    permalink: /projects/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
