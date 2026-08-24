@@ -15,7 +15,11 @@ bundle exec jekyll serve --livereload
 - Open **http://localhost:4000** in your browser.
 - Leave this running in its own terminal while you work. `--livereload` auto-refreshes the
   browser whenever you save a file.
-- First build takes ~25s; edits after that rebuild in a second or two.
+- A build from scratch takes ~9s; edits after that rebuild in about two seconds.
+
+The project pins its Ruby version via `.ruby-version`, so `rbenv` switches to Ruby 3.3.5
+automatically when you `cd` here. If `ruby -v` reports 4.x, your shell hasn't picked up
+`rbenv` — see the setup notes at the bottom.
 
 ## 2. Make your change
 

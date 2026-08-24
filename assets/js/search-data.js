@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-papers",
+  },{id: "nav-research",
+          title: "research",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-papers",
           title: "papers",
           description: "",
           section: "Navigation",
@@ -362,12 +369,37 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-star2-sparkle-new-grant-sparkle-star2-i-have-been-awarded-an-nwo-open-competition-large-grant-for-the-talltales-project-this-will-support-5-years-of-research-into-the-role-played-by-exaggeration-in-both-sincere-and-insincere-forms-of-communication-more-information-in-the-project-card-point-right-i-ll-be-recruiting-2-phd-students-next-spring",
+            },},{id: "news-star2-sparkle-new-grant-sparkle-star2-i-have-been-awarded-an-nwo-open-competition-large-grant-for-the-talltales-project-this-will-support-5-years-of-research-into-the-role-played-by-exaggeration-in-both-sincere-and-insincere-forms-of-communication-more-information-in-the-project-card",
           title: ':star2: :sparkle: New grant! :sparkle: :star2: I have been awarded an NWO Open...',
           description: "",
-          section: "News",},{id: "projects-talltales",
-          title: 'TallTales',
-          description: "exaggeration and norm-relativity",
+          section: "News",},{id: "projects-quantifiers-and-degrees",
+          title: 'Quantifiers and Degrees',
+          description: "Expressing how many, how tall...",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/degq/";
+            },},{id: "projects-evaluative-meaning",
+          title: 'Evaluative meaning',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/evaluative/";
+            },},{id: "projects-large-language-models",
+          title: 'Large Language Models',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llms/";
+            },},{id: "projects-number-words",
+          title: 'Number words',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/numbers/";
+            },},{id: "projects-psycholinguistics-of-meaning",
+          title: 'Psycholinguistics of meaning',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/psycho/";
+            },},{id: "projects-exaggeration",
+          title: 'Exaggeration',
+          description: "How can we understand the rhetorical function that exaggeration plays in settings from everyday conversation to political discourse? And how can we distinguish harmless exaggeration from malicious hyperbole?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/talltales/";
             },},{
