@@ -2,7 +2,7 @@
 layout: page
 title: Quantifiers and Degrees
 description: Expressing how many, how tall...
-img: assets/img/degq.png
+img: assets/img/degq2.png
 importance: 7
 category: work
 ---

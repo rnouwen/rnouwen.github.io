@@ -2,7 +2,7 @@
 layout: page
 title: Psycholinguistics of meaning
 description: 
-img: assets/img/jan.png
+img: assets/img/jan2.png
 importance: 2
 category: work
 ---
