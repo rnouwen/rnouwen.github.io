@@ -28,30 +28,25 @@ latest_posts:
 
 I am a language scientist, with a background in logic, artificial intelligence and cognitive science. My main interest is in how we assign meaning to language and how that allows us to use language for communication. I use experimental and computational methods. 
 
-
-
-<!-- news (left) and projects (right), side by side -->
-<div class="row mt-5" style="clear: both;">
-  <div class="col-md-6">
-    <h2>news</h2>
-    {% include news.liquid limit=true %}
-  </div>
-  <div class="col-md-6">
-    <h2>projects</h2>
-    <div class="projects">
-    {% assign sorted_projects = site.projects | sort: "importance" %}
-    {% if site.enable_project_categories and page.display_categories %}
-      {% assign sorted_projects = '' | split: '' %}
-      {% for category in page.display_categories %}
-        {% assign in_category = site.projects | where: "category", category | sort: "importance" %}
-        {% assign sorted_projects = sorted_projects | concat: in_category %}
-      {% endfor %}
-    {% endif %}
-    <div class="row row-cols-1">
-      {% for project in sorted_projects %}
-        {% include projects.liquid %}
-      {% endfor %}
-    </div>
-    </div>
-  </div>
+<h2>news</h2>
+<div class="news">
+{% include news.liquid limit=true %}
 </div>
+
+<h2>research themes</h2>
+<div class="projects">
+{% assign sorted_projects = site.projects | sort: "importance" %}
+{% if site.enable_project_categories and page.display_categories %}
+{% assign sorted_projects = '' | split: '' %}
+{% for category in page.display_categories %}
+{% assign in_category = site.projects | where: "category", category | sort: "importance" %}
+{% assign sorted_projects = sorted_projects | concat: in_category %}
+{% endfor %}
+{% endif %}
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+{% for project in sorted_projects %}
+{% include projects.liquid %}
+{% endfor %}
+</div>
+</div>
+

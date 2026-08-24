@@ -676,6 +676,25 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
+
+    // Keep whole words intact; Bootstrap's .card sets word-wrap: break-word,
+    // which splits long words (e.g. "exaggeration") mid-word in narrow cards.
+    .card-title,
+    .card-text {
+      overflow-wrap: normal;
+      word-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
+    // The title is an <h3>; shrink it so long words fit the narrow card column.
+    .card-title {
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
   }
 
   .col {
