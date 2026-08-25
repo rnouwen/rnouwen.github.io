@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rnouwen.github.io/sitemap.xml
+Sitemap: https://ricknouwen.org/sitemap.xml
