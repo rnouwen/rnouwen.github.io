@@ -379,7 +379,7 @@ ninja.data = [{
               window.location.href = "/projects/degq/";
             },},{id: "projects-evaluative-meaning",
           title: 'Evaluative meaning',
-          description: "",
+          description: "Language is rich with evaluative meaning. Why do we say of someone who is very late that they are &quot;horribly&quot;, &quot;terribly&quot; or &quot;pretty&quot; late? My view is natural language constantly multitasks, combining objective and subjective information, mixing denotation and connotation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/evaluative/";
             },},{id: "projects-large-language-models",
