@@ -28,9 +28,7 @@ latest_posts:
 
 I am a language scientist, with a background in logic, artificial intelligence and cognitive science. My main interest is in how we assign meaning to language and how that allows us to use language for communication. I use experimental and computational methods. 
 
-.
-
-<h2>news</h2>
+<h2>news:</h2>
 <div class="news">
 {% include news.liquid limit=true %}
 </div>
