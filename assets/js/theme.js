@@ -1,5 +1,16 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
+// Theme setting used when the visitor has not explicitly picked one. "light" means the
+// site ignores the browser/OS dark-mode preference by default; the toggle still offers
+// "dark" and "system".
+const DEFAULT_THEME_SETTING = "light";
+
+// localStorage key holding the visitor's explicit choice. Deliberately not the legacy
+// "theme" key: earlier versions of this script persisted "system" on first visit for
+// everyone, so reusing that key would keep pinning returning visitors to their OS
+// preference and the default above would never take effect.
+const THEME_STORAGE_KEY = "theme-setting";
+
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
@@ -14,7 +25,7 @@ let toggleThemeSetting = () => {
 
 // Change the theme setting and apply the theme.
 let setThemeSetting = (themeSetting) => {
-  localStorage.setItem("theme", themeSetting);
+  localStorage.setItem(THEME_STORAGE_KEY, themeSetting);
 
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
@@ -252,11 +263,11 @@ let transTheme = () => {
 };
 
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
+// "system". Falls back to DEFAULT_THEME_SETTING when the visitor has not chosen one.
 let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
+  let themeSetting = localStorage.getItem(THEME_STORAGE_KEY);
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "system";
+    themeSetting = DEFAULT_THEME_SETTING;
   }
   return themeSetting;
 };
@@ -280,7 +291,10 @@ let determineComputedTheme = () => {
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
 
-  setThemeSetting(themeSetting);
+  // Apply without persisting: an absent key has to keep meaning "no choice made", so
+  // that DEFAULT_THEME_SETTING stays in effect until the visitor uses the toggle.
+  document.documentElement.setAttribute("data-theme-setting", themeSetting);
+  applyTheme();
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
