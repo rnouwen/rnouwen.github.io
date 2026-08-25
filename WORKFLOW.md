@@ -7,7 +7,7 @@ before publishing.
 
 From the project folder (`/home/rnouwen/abu/rnouwen.github.io`):
 
-```bash
+```
 bundle exec jekyll serve --livereload
 ```
 
@@ -49,7 +49,7 @@ many times as you like. Nothing is public yet; this is entirely on your laptop.
 
 Stop the preview server (`Ctrl-C`), then:
 
-```bash
+```
 git add -A
 git commit -m "Update about page intro"
 git push origin main

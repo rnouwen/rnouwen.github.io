@@ -1,15 +1,11 @@
 function determineGiscusTheme() {
   
-    let theme =
-      localStorage.getItem("theme") ||
-      document.documentElement.getAttribute("data-theme") ||
-      "system";
-
-    if (theme === "dark") return "dark";
-    if (theme === "light") return "light";
-
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return prefersDark ? "dark" : "light";
+    // theme.js runs synchronously in <head> and resolves the visitor's setting (including
+    // the light-by-default fallback) into a computed "light"/"dark" on <html data-theme>.
+    // Read that single source of truth rather than localStorage or prefers-color-scheme,
+    // so the comment widget can never disagree with the rest of the page.
+    const theme = document.documentElement.getAttribute("data-theme");
+    return theme === "dark" ? "dark" : "light";
   
 }
 
