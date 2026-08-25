@@ -374,32 +374,32 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-quantifiers-and-degrees",
           title: 'Quantifiers and Degrees',
-          description: "Expressing how many, how tall...",
+          description: "This theme comprises my work on the (mostly formal) semantics of quantifiers and degree (constructions). What logic accurately describes how we communication quantities and extents? Why is there such linguistic diversity in how we express such seemingly straightforward concepts? How can we account for secondary inferences that we draw from the use of certain expressions? Why, for instance, is it odd to say that a triangle has &#39;at least three&#39; sides, when it is clearly less odd to say that it has &#39;more than two&#39; sides?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/degq/";
             },},{id: "projects-evaluative-meaning",
           title: 'Evaluative meaning',
-          description: "Language is rich with evaluative meaning. Why do we say of someone who is very late that they are &quot;horribly&quot;, &quot;terribly&quot; or &quot;pretty&quot; late? My view is natural language constantly multitasks, combining objective and subjective information, mixing denotation and connotation.",
+          description: "Language is rich with evaluative meaning. Why do we say of someone who is very late that they are &#39;horribly&#39;, &#39;terribly&#39; or &#39;pretty&#39; late? My view is natural language constantly multitasks, combining objective and subjective information, mixing denotation and connotation. One example of this is what I call the Goldilocks effect, the fact that we tend to use words with negative valence to express extreme things (&#39;Sue is terribly nice&#39;) and words with positive valence for milder judgments (&#39;Sue is pretty nice&#39;).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/evaluative/";
             },},{id: "projects-large-language-models",
           title: 'Large Language Models',
-          description: "",
+          description: "Given the enormous impact that generative artificial intelligence has had on our lives and on our planet, it is remarkable how little we understand of how these systems do what they do. What do LLMs do when they communicate with humans? On the surface their linguistic capabilities are human-like, but can we find a way of describing more accurately what is going on when they use language? And, importantly, we need also ask the question the other way around: What do humans do when they communicate with AI? How do we anthropomophise them, and how does that affect our relationship with this new technology?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/llms/";
             },},{id: "projects-number-words",
           title: 'Number words',
-          description: "",
+          description: "What could be easier than deciding what the meaning of a number word is? Right? Surely &quot;two&quot; just means 2? It turns out words for numbers are surprisingly complex things.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/numbers/";
-            },},{id: "projects-psycholinguistics-of-meaning",
-          title: 'Psycholinguistics of meaning',
-          description: "",
+            },},{id: "projects-discourse-and-anaphora",
+          title: 'Discourse and anaphora',
+          description: "How do we build a rich meaningful narrative by stringing together sentences? What are the processes that create coherence between the building blocks of discourse? I am particularly interested in anaphora and how we keep track of the individuals, entities, events and facts that we refer to in our daily use of language.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/psycho/";
             },},{id: "projects-exaggeration",
           title: 'Exaggeration',
-          description: "How can we understand the rhetorical function that exaggeration plays in settings from everyday conversation to political discourse? And how can we distinguish harmless exaggeration from malicious hyperbole?",
+          description: "How can we understand the rhetorical function that exaggeration plays in settings from everyday conversation to political discourse? My view is that hyperbole is not a rational linguistic phenomenon, but rather a result of cognitive processing akin to that involved in super-normal stimuli like caricatures or Tinbergen&#39;s famous herring gull beaks. I want to understand these phenomena better and investigate how to think about the relation between exaggeration and truthfulness. How can we distinguish harmless exaggeration from malicious hyperbole?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/talltales/";
             },},{
