@@ -210,6 +210,15 @@ defaults:
 
 sass:
   style: compressed
+  # Silence Dart Sass 3.0 deprecation noise. Every one of these warnings comes
+  # from vendored icon-font code (_sass/font-awesome, _sass/tabler-icons) or
+  # from the @import list in assets/css/main.scss that al-folio ships; none of
+  # the site's own stylesheets use the deprecated globals. Remove these two
+  # keys if/when al-folio migrates to @use.
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
@@ -313,7 +322,7 @@ max_author_limit: 5 # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
-enable_publication_thumbnails: true
+enable_publication_thumbnails: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes

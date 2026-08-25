@@ -720,7 +720,17 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1rem;
+
+  // Year headings live in a narrow gutter to the left of the entries, so a
+  // year costs no vertical space at all. Only applied when the list is
+  // actually grouped by year (the selected-papers list is not).
+  &:has(h2.bibliography) {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    column-gap: 0.75rem;
+    align-items: start;
+  }
 
   h1 {
     color: var(--global-theme-color);
@@ -739,24 +749,42 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-text-color);
+    grid-column: 1;
+    position: sticky;
+    top: 5rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
     font-weight: bold;
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    line-height: 1.3;
     text-align: right;
+    border-top: none;
+    margin: 0;
+    padding-top: 0.7rem;
   }
 
   ol.bibliography {
+    grid-column: 2;
     list-style: none;
-    padding: 0;
+    padding: 0.6rem 0 0 0;
     margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid var(--global-divider-color);
+    line-height: 1.35;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
+
+      // Thumbnails are off site-wide (enable_publication_thumbnails), so the
+      // entry gets the whole row rather than bootstrap's col-sm-10.
+      .row > div {
+        flex: 1 1 auto;
+        max-width: none;
+      }
 
       .preview {
         max-width: 100%;
+        max-height: 4.5rem;
+        width: auto;
         height: auto;
       }
 
@@ -788,6 +816,14 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
 
+      .periodical {
+        display: inline;
+
+        + .periodical::before {
+          content: " · ";
+        }
+      }
+
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -816,14 +852,18 @@ footer.sticky-bottom {
       }
 
       .links {
+        display: inline;
+        margin-left: 0.4rem;
+        white-space: nowrap;
+
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          font-size: 0.65rem;
+          line-height: 1.1;
+          padding: 0.1rem 0.45rem;
           margin-left: 0;
+          vertical-align: baseline;
 
           &:hover {
             color: var(--global-theme-color);
@@ -895,6 +935,28 @@ footer.sticky-bottom {
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+  }
+
+  // On phones the gutter costs too much of the text width: put the year back
+  // above its group, but keep it small.
+  @media (max-width: 575.98px) {
+    &:has(h2.bibliography) {
+      display: block;
+      margin-left: 0;
+    }
+
+    h2.bibliography {
+      position: static;
+      text-align: left;
+      padding-top: 0.6rem;
+      margin-bottom: 0.1rem;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    ol.bibliography {
+      border-top: none;
+      padding-top: 0.2rem;
     }
   }
 }
