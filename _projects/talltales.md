@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exaggeration
-description: How can we understand the rhetorical function that exaggeration plays in settings from everyday conversation to political discourse? My view is that hyperbole is not a rational linguistic phenomenon, but rather a result of cognitive processing akin to that involved in super-normal stimuli like caricatures or Tinbergen's famous herring gull beaks. I want to understand these phenomena better and investigate how to think about the relation between exaggeration and truthfulness. How can we distinguish harmless exaggeration from malicious hyperbole? 
+description: How can we understand the rhetorical function that exaggeration plays in settings from everyday conversation to political discourse? My view is that hyperbole is not a rational linguistic phenomenon, but rather a result of cognitive processing akin to that involved in so called super-normal stimuli like caricatures or Tinbergen's famous mock herring gull beaks. I want to understand exaggerated language better and investigate how to think about the relation between exaggeration and truthfulness. How can we distinguish harmless exaggeration from malicious hyperbole? 
 img: assets/img/gull_head.png
 importance: 1
 category: work
