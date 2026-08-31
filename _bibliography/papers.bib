@@ -2,6 +2,31 @@
 % PDF links are given in the `file` field; online/DOI links in `website`/`doi`.
 % Relative paths in the source were resolved against https://ricknouwen.org/
 
+@article{anh26,
+author = {Anh Dang and Rick Nouwen and Massimo Poesio},
+title = {A circuit for plural reference: how {LLMs} represent and retrieve singular and plural entities},
+year = {2026},
+abstract = {Coreference resolution is an important task in
+contextual reasoning. In this paper, we investigate the mechanism for representing and retrieving singular and plural entities for plural
+reference. We use a combination of mechanistic interpretability and attention pattern analysis
+to study the process in which LLMs predict a
+pronoun to refer back to previously mentioned
+entities. Using a range of causal intervention
+techniques, we find a set of attention heads that
+are responsible for (1) representing coreference
+information in the input, (2) identifying entities
+that form a plural reference, (3) transferring the
+information to the component that is responsible for selecting the antecedents and predicting
+the pronoun. We also find that LLMs align
+with humans in preference for plural pronoun.
+Specifically, entities in a plural construction are
+more likely to be referred to as a plural entity
+if they are ontologically similar and are linked
+by the conjunction and.},
+projects = {llms,discourse},
+journal = {EMNLP findings}}
+
+
 @unpublished{nouwen2026hyperbole,
   author  = {Nouwen, Rick},
   title   = {Hyperbole is not a rational speech act},

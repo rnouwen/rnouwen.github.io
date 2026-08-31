@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a language scientist, with a background in logic, artificial intelligence and cognitive science. My main interest is in how we assign meaning to language and how that allows us to use language for communication. I use experimental and computational methods. 
+I am a language scientist, with a background in cognitive science, artificial intelligence and logic. My main interest is in how we assign meaning to language and how that allows us to use language for communication. I use experimental and computational methods. 
 
 <h2>news</h2>
 <div class="news">
