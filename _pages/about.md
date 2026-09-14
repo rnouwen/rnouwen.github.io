@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: mec.png
+  image: me26.jpeg #mec.png
   image_circular: true # crops the image to make it circular
   more_info: 
 selected_papers: false # includes a list of papers marked as "selected={true}"
