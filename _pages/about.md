@@ -43,7 +43,7 @@ I am a language scientist, with a background in cognitive science, artificial in
 {% assign sorted_projects = sorted_projects | concat: in_category %}
 {% endfor %}
 {% endif %}
-<div class="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-3">
 {% for project in sorted_projects %}
 {% include projects.liquid %}
 {% endfor %}
