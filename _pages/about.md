@@ -32,7 +32,7 @@ I'm a language scientist, with a background in cognitive science, artificial int
 [Tilburg School of Humanities & Digital Sciences](https://www.tilburguniversity.edu/about/schools/tshd)          
 [Department of Communication & Cognition](https://www.tilburguniversity.edu/about/schools/tshd/departments/dcc)      
 [Tilburg, the Netherlands](https://en.wikipedia.org/wiki/Tilburg)      
-r  :small_blue_diamond: w :small_blue_diamond: f :small_blue_diamond: nouwen :postbox: tilburguniversity :small_blue_diamond: edu      
+r:small_blue_diamond:w:small_blue_diamond:f:small_blue_diamond:nouwen:postbox:tilburguniversity:small_blue_diamond:edu      
 
 <h2>news</h2>
 <div class="news">
