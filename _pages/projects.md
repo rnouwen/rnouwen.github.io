@@ -2,11 +2,11 @@
 layout: page
 title: research
 permalink: /projects/
-description: 
+description:
 nav: false
 nav_order: 2
 hide_header: true
-display_categories: 
+display_categories:
 horizontal: true
 ---
 

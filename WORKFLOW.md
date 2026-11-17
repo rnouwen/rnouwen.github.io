@@ -25,18 +25,18 @@ automatically when you `cd` here. If `ruby -v` reports 4.x, your shell hasn't pi
 
 Open the relevant source file in your editor and save it. Where things live:
 
-| To change…                              | Edit…                       |
-| --------------------------------------- | --------------------------- |
-| The About page                          | `_pages/about.md`           |
-| A news/announcement item                | a file in `_news/`          |
-| A publication                           | `_bibliography/papers.bib`  |
-| Site-wide settings (title, links, menu) | `_config.yml`               |
-| Images / PDFs                           | `assets/`                   |
+| To change…                              | Edit…                      |
+| --------------------------------------- | -------------------------- |
+| The About page                          | `_pages/about.md`          |
+| A news/announcement item                | a file in `_news/`         |
+| A publication                           | `_bibliography/papers.bib` |
+| Site-wide settings (title, links, menu) | `_config.yml`              |
+| Images / PDFs                           | `assets/`                  |
 
 Most content files start with a **front-matter** block (between `---` lines) holding
 metadata, followed by the actual content in Markdown below it. Edit the text, save.
 
-> One caveat: changes to **`_config.yml`** are the exception — Jekyll does *not* live-reload
+> One caveat: changes to **`_config.yml`** are the exception — Jekyll does _not_ live-reload
 > those. If you edit `_config.yml`, stop the server (`Ctrl-C`) and restart it.
 
 ## 3. Preview it

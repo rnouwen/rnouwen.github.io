@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
   image: me_straight.jpg #me26.jpeg #mec.png
   image_circular: true # crops the image to make it circular
-  more_info: 
+  more_info:
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
@@ -27,14 +27,13 @@ latest_posts:
 ---
 
 I'm a professor of communication, cognition and information at Tilburg University.
-I'm a language scientist, with a background in cognitive science, artificial intelligence and logic. I investigate how we assign meaning to language and how that allows us to use language for communication. I use experimental and computational methods.  
+I'm a language scientist, with a background in cognitive science, artificial intelligence and logic. I investigate how we assign meaning to language and how that allows us to use language for communication. I use experimental and computational methods.
 
 r:small_blue_diamond:w:small_blue_diamond:f:small_blue_diamond:nouwen:postbox:tilburguniversity:small_blue_diamond:edu
 
-
-[Tilburg School of Humanities & Digital Sciences](https://www.tilburguniversity.edu/about/schools/tshd)          
-[Department of Communication & Cognition](https://www.tilburguniversity.edu/about/schools/tshd/departments/dcc)      
-[Tilburg, the Netherlands](https://en.wikipedia.org/wiki/Tilburg)      
+[Tilburg School of Humanities & Digital Sciences](https://www.tilburguniversity.edu/about/schools/tshd)  
+[Department of Communication & Cognition](https://www.tilburguniversity.edu/about/schools/tshd/departments/dcc)  
+[Tilburg, the Netherlands](https://en.wikipedia.org/wiki/Tilburg)
 
 <h2>news</h2>
 <div class="news">
@@ -57,6 +56,5 @@ r:small_blue_diamond:w:small_blue_diamond:f:small_blue_diamond:nouwen:postbox:ti
 {% endfor %}
 </div>
 </div>
-
 
 .

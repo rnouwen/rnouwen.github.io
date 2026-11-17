@@ -7,7 +7,7 @@ importance: 2
 category: work
 ---
 
-I investigate this mixture of various kinds of meanings in single utterances by looking at exclamatives, adverbs of degree, but also figures of speech like hyperbole. 
+I investigate this mixture of various kinds of meanings in single utterances by looking at exclamatives, adverbs of degree, but also figures of speech like hyperbole.
 
 #### Publications
 
