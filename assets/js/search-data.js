@@ -365,7 +365,7 @@ ninja.data = [{
             },},{id: "news-star2-sparkle-new-grant-sparkle-star2-i-have-been-awarded-an-nwo-open-competition-large-grant-for-the-talltales-project-this-will-support-5-years-of-research-into-the-role-played-by-exaggeration-in-both-sincere-and-insincere-forms-of-communication-more-information-in-the-project-card",
           title: ':star2: :sparkle: New grant! :sparkle: :star2: I have been awarded an NWO Open...',
           description: "",
-          section: "News",},{id: "news-new-position-after-many-years-in-utrecht-i-ve-moved-to-a-new-position-at-tilburg-university-joining-the-department-of-cognition-and-communication-i-m-thrilled-to-become-part-of-this-community",
+          section: "News",},{id: "news-new-position-after-many-years-in-utrecht-i-ve-moved-to-a-new-position-at-tilburg-university-joining-the-department-of-communication-and-communication-i-m-thrilled-to-become-part-of-this-community",
           title: 'New position! - After many years in Utrecht, I’ve moved to a new...',
           description: "",
           section: "News",},{id: "projects-quantifiers-and-degrees",
