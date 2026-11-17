@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**New position!** - After many years in Utrecht, I've moved to a new position at [Tilburg University](https://www.tilburguniversity.edu/), joining [the department of communication and communication](https://www.tilburguniversity.edu/about/schools/tshd/departments/dcc). I'm thrilled to become part of this community!
+**New position!** - After many years in Utrecht, I've moved to a new position at [Tilburg University](https://www.tilburguniversity.edu/), joining [the department of communication and cognition](https://www.tilburguniversity.edu/about/schools/tshd/departments/dcc). I'm thrilled to become part of this community!
